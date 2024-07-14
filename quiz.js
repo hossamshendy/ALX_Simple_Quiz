@@ -11,7 +11,7 @@ function checkAnswer() {
     const feedbackElement = document.getElementById('feedback');
 
     // Check if the user has selected an answer
-    if (userAnswer) {
+    if (userAnswer === correctAnswer) {
         // Compare the user's answer with the correct answer
         if (userAnswer.value === correctAnswer) {
             feedbackElement.textContent = "Correct! Well done.";
